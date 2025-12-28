@@ -5,11 +5,16 @@
     "clean": "rimraf src/.observablehq/cache",
     "build": "observable build",
     "dev": "observable preview",
+    "preview": "observable preview",
     "deploy": "observable deploy",
-    "observable": "observable"
+    "convert": "observable convert",
+    "test": "echo \"No tests specified\" && exit 0",
+    "help": "observable help",
+    "version": "observable version"
   },
   "dependencies": {
-    "@observablehq/framework": "^1.13.3"
+    "@observablehq/framework": "^1.13.3",
+    "dotenv": "^17.2.3"
   },
   "devDependencies": {
     "rimraf": "^5.0.5"
