@@ -6,13 +6,16 @@ data: nfts-by-address.json
 draft: false
 ---
 
-# NFTs by Address
+## NFTs by Address
 
-## getNFTsForOwner-v3
+### getNFTsForOwner-v3
 
 Owner: `greeffer.eth`
+
 Network: `ETH_MAINNET`
-Contract Address: `0x6dF751449fBd51972772D64Fa3B3EA81E73AB071`.
+
+Contract Address: `0x6dF751449fBd51972772D64Fa3B3EA81E73AB071`
+
 Metadata: 'false'
 
 #### [Alchemy Dashboard URL](https://dashboard.alchemy.com/sandbox/?network=ETH_MAINNET&method=getNFTsForOwner-v3&query.owner=greeffer.eth&query.contractAddresses%5B0%5D=0x6dF751449fBd51972772D64Fa3B3EA81E73AB071&query.withMetadata=false&query.orderBy=transferTime&query.excludeFilters[]&query.includeFilters[]&query.spamConfidenceLevel=&query.tokenUriTimeoutInMs=0&query.pageKey=&query.pageSize=100)
@@ -25,7 +28,7 @@ curl --request GET \
      --header 'accept: application/json'
 ```
 
-### Response
+#### Response
 
 ```json
 {
@@ -110,7 +113,8 @@ curl --request GET \
   "pageKey": null
 }
 ```
-### Response with Metadata
+
+#### Response with Metadata
 
 ```json
 {

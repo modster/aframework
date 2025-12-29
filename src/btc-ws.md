@@ -11,16 +11,22 @@ draft: true
 </div>
 
 ```js
-const socket = new WebSocket("wss://ws.eodhistoricaldata.com/ws/crypto?api_token=demo");
+const socket = new WebSocket(
+  "wss://ws.eodhistoricaldata.com/ws/crypto?api_token=demo",
+);
 invalidation.then(() => socket.close());
-socket.addEventListener("open", () => socket.send(JSON.stringify({action: "subscribe", symbols: "BTC-USD"})));
+socket.addEventListener(
+  "open",
+  () =>
+    socket.send(JSON.stringify({ action: "subscribe", symbols: "BTC-USD" })),
+);
 const btc = Generators.observe((notify) => {
   let currentValue;
   const messaged = (event) => {
     const m = JSON.parse(event.data);
     const v = +m.p;
     if (isNaN(v) || v === currentValue) return;
-    notify((currentValue = v));
+    notify(currentValue = v);
   };
   socket.addEventListener("message", messaged);
   return () => socket.removeEventListener("message", messaged);
