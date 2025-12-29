@@ -10,11 +10,10 @@ This is a test page for plotting functionality.
 const aapl = FileAttachment("/data/aapl.csv").csv({ typed: true })
     .then((res) => console.log(res))
     .then((data) => data.slice(0, 100))
-    .catch((error) => {
-        console.error("Error loading data:", error)
-    })
-
+    .catch((error) => {ZZZZZZZZZ
 ```
+
+---
 
 ```js
 

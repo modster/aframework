@@ -1,4 +1,4 @@
-name: Deploy
+name: Deno Deploy
 
 on:
   # Run this workflow whenever a new commit is pushed to main.

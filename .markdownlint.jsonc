@@ -1,7 +1,7 @@
 {
     "no-inline-html":"warning",
     "code_block_line_length": {
-        "code_block_line_length": false,
+        // "code_block_line_length": false,
         "stern": true,
         "strict": true
     }
