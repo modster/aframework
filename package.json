@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@observablehq/framework": "^1.13.3",
+    "ccxt": "^4.5.30",
     "dotenv": "^17.2.3"
   },
   "devDependencies": {
